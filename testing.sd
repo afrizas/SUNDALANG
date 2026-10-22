@@ -1,0 +1,28 @@
+#!/usr/bin/env sunda
+pagawean faktorial(n) {
+    lamun n <= 1 {
+        balik 1
+    }
+    balik n * faktorial(n - 1)
+}
+
+jieun ngaran = tanya("Saha ngaran anjeun? ")
+citak "Wilujeng sumping,", ngaran
+
+pikeun i ti 1 nepi 5 {
+    citak teks(i) + "! =", faktorial(i)
+}
+
+jieun buah = ["apel", "jeruk", "mangga"]
+tambihkeun(buah, "durian")
+citak "Aya", panjang(buah), "buah:", buah
+
+jieun total = 0
+jieun n = 1
+salila n <= 10 {
+    lamun n % 2 == 0 {
+        total += n
+    }
+    n += 1
+}
+citak "Jumlah angka genap 1-10:", total
